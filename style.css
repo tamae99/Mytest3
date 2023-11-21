@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+ruby,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*end reset css*/
+
+/* common */
+
+body{
+  font-family:Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color:#333333;
+  width:100%;
+}
+.link{
+  all:unset;
+}
+
+.link:hover{
+  cursor:pointer;
+  opacity:.8;
+}
+
+.container{
+  max-width:1170px;
+  margin:0 auto;
+  display:flex;
+}
+
+/* header */
+.header{
+  text-align: center;
+}
+.logo{
+  width:280px;
+  height:60px;
+  margin:48px 0 40px;
+  object-fit: contain;
+}
+
+/* main */
+.sp{
+  display:none;
+}
+
+/* nav */
+.grobal-nav{
+  display:flex;
+  gap:80px;
+  justify-content: center;
+  margin:28px 0 35px;
+}
+
+.nav-link{
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+
+/* concept */
+.concept{
+  padding:49px 0 ;
+}
+
+.concept-pic{
+  max-width: 555px;
+  width:50%;
+  margin-left: 30px;
+  object-fit: contain;
+}
+
+.desc{
+  padding-left: 40px;
+  margin:177px 0;
+}
+
+.desc-subtitle{
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing:1.6px;
+}
+
+.desc-title{
+  font-size: 32px;
+  color:#24a8bf;
+  letter-spacing: 3.2px;
+  margin-top:18px;
+}
+.desc-text{
+  font-size: 16px;
+  letter-spacing:1.6px;
+  line-height: 1.75;
+  margin-top: 30px;
+}
+
+/* blog */
+.blog{
+  margin-top:43px;
+  text-align: center;
+
+}
+.heading{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-title{
+  font-size: 32px;
+  color:#24a8bf;
+  letter-spacing: 2.56px;
+}
+
+.blog-subtitle{
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.39px;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:30px;
+}
+
+.item{
+  width:calc((100% - 30px * 4) / 3);
+  padding-bottom: 1px;
+}
+
+.item-title{
+  font-size:15px;
+  line-height: 1.6;
+  margin-top:5px;
+  text-align: left;
+}
+
+.data{
+  font-size: 12px;
+  line-height: 1.15;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.btn{
+  width:220px;
+  height:53px;
+  font-size: 15px;
+  font-weight: bold;
+  color:#24a8bf;
+  border:1px solid #24a8bf;
+  border-radius: 3px;
+  margin-top: 28px;
+}
+
+/* footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.white-logo{
+  width:180px;
+  padding:70px 0 43px;
+}
+
+.copyright{
+  font-size:12px;
+  line-height: 1.15;
+  letter-spacing: 0.6px;
+  margin-bottom: 31px;
+  color:#8b8b8b;
+}
+
+@media(max-width:760px){
+  /* common */
+  .container{
+    flex-direction: column;
+    width:100%;
+  }
+
+/* header */
+.logo{
+  width:160px;
+  margin:16px 0 9px;
+}
+
+/* mainvisual */
+.pc{
+  display: none;
+}
+
+.sp{
+  display: block;
+}
+
+/* grobal-nav */
+.grobal-nav{
+  display:flex;
+  gap:50px;
+  justify-content: center;
+  margin:26px 0 0px;
+}
+
+.nav-link{
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+/* concept */
+.concept{
+  padding:49px 0 ;
+}
+
+.concept-pic{
+  max-width:100%;
+  width:100%;
+  margin: 18px auto 0;
+  padding:0 20px;
+}
+
+.desc{
+  padding-left: 40px;
+  margin:31px 0 0;
+}
+
+.desc-subtitle{
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing:1.5px;
+}
+
+.desc-title{
+  font-size: 26px;
+  line-height: 1.5;
+  color:#24a8bf;
+  letter-spacing: 2.6px;
+  margin-top:16px;
+}
+.desc-text{
+  font-size: 15px;
+  letter-spacing:1.5px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* blog */
+.blog{
+  margin-top:33px;
+  text-align: center;
+
+}
+.heading{
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.blog-title{
+  font-size: 30px;
+  color:#24a8bf;
+  letter-spacing: 2.4px;
+}
+
+.blog-subtitle{
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.36px;
+}
+
+.list{
+  flex-direction: column;
+  gap:23px;
+}
+
+.item{
+  width:100%;
+  padding:0 20px;
+}
+
+.item-title{
+  font-size:15px;
+  line-height: 1.6;
+  margin-top:3px;
+  text-align: left;
+}
+
+.data{
+  font-size: 12px;
+  line-height: 1.15;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.btn{
+  width:calc(100% - 40px);
+  height:52px;
+  font-size: 14px;
+  font-weight: bold;
+  color:#24a8bf;
+  border:1px solid #24a8bf;
+  border-radius: 3px;
+  margin-top: 22px;
+}
+
+/* footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.white-logo{
+  width:100px;
+  padding:65px 0 33px;
+}
+
+.copyright{
+  font-size:10px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color:#8b8b8b;
+}
+}
