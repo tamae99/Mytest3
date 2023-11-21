@@ -292,6 +292,12 @@ body{
   border:1px solid #24a8bf;
   border-radius: 3px;
   margin-top: 28px;
+  position:relative;
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  right:5px;
 }
 
 /* footer */
@@ -440,18 +446,8 @@ body{
   width:calc(100% - 40px);
   height:52px;
   font-size: 14px;
-  font-weight: bold;
-  color:#24a8bf;
-  border:1px solid #24a8bf;
-  border-radius: 3px;
   margin-top: 22px;
-  position:absolute;
-}
 
-.material-symbols-outlined{
-  position: relative;
-  align-items: center;
-  right:3px;
 }
 
 /* footer */
