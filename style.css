@@ -445,6 +445,13 @@ body{
   border:1px solid #24a8bf;
   border-radius: 3px;
   margin-top: 22px;
+  position:absolute;
+}
+
+.material-symbols-outlined{
+  position: relative;
+  align-items: center;
+  right:3px;
 }
 
 /* footer */
