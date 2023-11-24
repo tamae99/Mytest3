@@ -257,6 +257,7 @@ body{
 
 .blog-title{
   font-size: 32px;
+  font-weight: bold;
   color:#24a8bf;
   letter-spacing: 2.56px;
 }
